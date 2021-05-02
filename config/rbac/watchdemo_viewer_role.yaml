@@ -1,0 +1,20 @@
+# permissions for end users to view watchdemoes.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: watchdemo-viewer-role
+rules:
+- apiGroups:
+  - demo.zego.im
+  resources:
+  - watchdemoes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - demo.zego.im
+  resources:
+  - watchdemoes/status
+  verbs:
+  - get

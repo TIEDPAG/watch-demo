@@ -1,0 +1,7 @@
+apiVersion: demo.zego.im/v1
+kind: WatchDemo
+metadata:
+  name: watchdemo-sample
+spec:
+  # Add fields here
+  foo: bar

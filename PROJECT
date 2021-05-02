@@ -1,0 +1,11 @@
+domain: zego.im
+layout: go.kubebuilder.io/v2
+projectName: watch-demo
+repo: github.com/TIEDPAG/watch-demo
+resources:
+- group: demo
+  kind: WatchDemo
+  version: v1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
